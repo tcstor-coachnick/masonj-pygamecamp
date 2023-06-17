@@ -1,0 +1,17 @@
+import random
+target = random.randint(1,100)
+tries = 20
+while True:
+    guess = input ("guess a number between 1,100 ")
+    guess = int(guess)
+    tries -=1
+    if guess > target:
+        print("guess lower")
+    elif guess < target:
+        print("guess higher")
+    elif guess==target:
+        print("you got it right!")
+        break
+    if tries ==0:
+        print("you suck at this btw I'm not breaking the 4rth wall")
+        break
